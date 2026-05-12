@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rico's Informatie Pagina</title>
+  <style>
+    body{
+      font-family:Arial;
+      background:#c3f1ff;
+    }
+    nav{
+      background:#333;
+      color:#fff;
+      padding:1rem;
+      text-align:center;
+      width:max-content;
+      margin-top:1rem;           
+    }
+    nav a{color:#fff;margin:0 .5rem;text-decoration:none;}
+    section{padding:2rem;}
+    .image-button{position:relative;display:inline-block;cursor:pointer;}
+    .image-button img{display:block;max-width:300px;}
+    .image-button .image-text{position:absolute;top:64%;left:46%;transform:translate(-50%, -50%)rotate(5.5deg);
+      color:#fffb00;font-weight:bold;text-align:center;font-size:1.5rem;}
+    .image-button1{position:fixed;bottom:10px;right:10px;cursor:pointer;}
+    .image-button1 img{display:block;max-width:300px;}
+    .image-button1 .image-text{position:absolute;top:58%;left:44%;transform:translate(-50%, -50%)rotate(-26deg);
+      color:#100058;font-weight:bold;font-size:2.5rem;text-align:center;}
+    .image-button2{position:absolute;display:inline-block;cursor:pointer;top:50%;left:50%;} 
+    .image-button2 img{display:block;max-width:300px;}
+    .image-button2 .image-text{position:absolute;top:62%;left:62%;transform:translate(-50%, -50%)rotate(-23deg);
+      color:#fffb00;font-weight:bold;text-align:center;font-size:1.5rem;}
+    .image-button3{position:absolute;display:inline-block;cursor:pointer;top:20%;left:40%;}
+    .image-button3 img{display:block;max-width:300px;}  
+    .image-button3 .image-text{position:absolute;top:55%;left:50%;transform:translate(-50%, -50%)rotate(4deg);
+      color:#fffb00;font-weight:bold;text-align:center;font-size:1.5rem;}
+  </style>
+</head>
+<body>
+ <nav>
+   <a href="HOOFDPAGINA.html">Home</a>
+   <a href="IHK.html">In het kort</a>
+   <a href="Hobbies.html">Hobbies</a>
+   <a href="Game.html">Game</a>
+  </nav>
+
+  <section id="home">
+    <div style="text-align:start;color:#100058;">
+    <h1>Welkom bij Rico's informatie pagina!</h1>
+    <p>Op deze pagina vind je informatie over Rico, zoals zijn hobby's, interesses en nog veel meer. Veel plezier met het rondkijken op mijn pagina!</p>
+    <div class="image-button" onclick="location.href='IHK.html';">
+      <img src="https://www.lego.com/cdn/product-assets/element.spin.photoreal/300101/00004.png" alt="Ga naar In het kort" />
+      <div class="image-text">In het kort</div>
+    </div>
+    <div class="image-button1" onclick="location.href='HOOFDPAGINA.html';">
+      <img src="Brick Seperator.png" alt="Terug naar Home" />
+      <div class="image-text">Home</div>
+    </div>
+    <div class="image-button2" onclick="location.href='Hobbies.html';">
+      <img src="https://www.lego.com/cdn/product-assets/element.spin.photoreal/4165967/00005.png" alt="Ga naar Hobbies" />
+      <div class="image-text">Hobbies</div>
+    </div>
+        <div class="image-button3" onclick="location.href='Game.html';">
+      <img src="https://www.lego.com/cdn/product-assets/element.spin.photoreal/329721/00008.png" alt="Ga naar Game" />
+      <div class="image-text">Game</div>
+    </div>
+        </div>
+        <div class="image-button4" onclick="location.href='Nieuws.html';">
+      <img src="https://www.lego.com/cdn/product-assets/element.spin.photoreal/6212388/00008.png" alt="Ga naar Nieuws" />
+      <div class="image-text">Nieuws</div>
+    </div>
+  </section>
+</body>
+</html>
