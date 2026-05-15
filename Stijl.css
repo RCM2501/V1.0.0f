@@ -21,6 +21,8 @@ body{
    
 
 #btn0{position:absolute;top:20%;left:10%;}
+#btn0 .image-text{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)rotate(4deg);
+   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
 #btn1{position:fixed;bottom:30px;right:47px;}
 #btn2{position:absolute;top:53%;left:42%;}
 #btn3{position:absolute;top:20%;left:40%;}
