@@ -10,49 +10,29 @@
 
 <body>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="IHK.html">In het kort</a>
-    <a href="Hobbies.html">Hobbies</a>
-    <a href="Game.html">Game</a>
-    <a href="Nieuws.html">Nieuws</a>
-    <a href="Vragenlijst.html">Vragenlijst</a>
+    <a href="Home.html" target="mainframe">Home</a>
+    <a href="IHK.html" target="mainframe">In het kort</a>
+    <a href="Hobbies.html" target="mainframe">Hobbies</a>
+    <a href="Game.html" target="mainframe">Game</a>
+    <a href="Nieuws.html" target="mainframe">Nieuws</a>
+    <a href="Vragenlijst.html" target="mainframe">Vragenlijst</a>
   </nav>
 
-  <section id="home">
-    <div style="text-align:start;color:#100058;">
-      <h1>Welkom bij Rico's informatie pagina!</h1>
-      <p>Op deze pagina vind je informatie over Rico, zoals mijn hobby's, interesses en nog veel meer. Veel plezier met
-        het rondkijken op mijn pagina!</p>
-      <div class="image-button" id="btn0" onclick="location.href='IHK.html';">
-        <img src="https://www.lego.com/cdn/product-assets/element.spin.photoreal/300101/00004.png"
-          alt="Ga naar In het kort" />
-        <div class="image-text">In het kort</div>
-      </div>
-      <div class="image-button" id="btn1" onclick="location.href='index.html';">
+  <iframe name="mainframe" src="Home.html" class="frame"></iframe>
+
+  <section>
+    <div class="image-button" id="btn1">
+      <a href="Home.html" target="mainframe">
         <img src="Brick Seperator.png" alt="Terug naar Home" />
-        <div class="image-text">Home</div>
-      </div>
-      <div class="image-button" id="btn2" onclick="location.href='Hobbies.html';">
-        <img src="https://www.lego.com/cdn/product-assets/element.spin.photoreal/6493344/00001.png"
-          alt="Ga naar Hobbies" />
-        <div class="image-text">Hobbies</div>
-      </div>
-      <div class="image-button" id="btn3" onclick="location.href='Game.html';">
-        <img src="https://www.lego.com/cdn/product-assets/element.spin.photoreal/329721/00008.png" alt="Ga naar Game" />
-        <div class="image-text">Game</div>
-      </div>
-      <div class="image-button" id="btn4" onclick="location.href='Nieuws.html';">
-        <img src="https://www.lego.com/cdn/product-assets/element.spin.photoreal/6212388/00008.png"
-          alt="Ga naar Nieuws" />
-        <div class="image-text">Nieuws</div>
-      </div>
-      <div class="image-button" id="btn5" onclick="location.href='Vragenlijst.html';">
-        <img src="https://www.lego.com/cdn/product-assets/element.spin.photoreal/6550332/00001.png"
-          alt="Ga naar Vragenlijst" />
-        <div class="image-text">Vragenlijst</div>
+      </a>
+
+      <div class="image-text">Home
+        
       </div>
     </div>
   </section>
 </body>
 
 </html>
+
+<!--onclick="location.href='Home.html';"-->

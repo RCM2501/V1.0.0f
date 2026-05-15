@@ -19,15 +19,26 @@ body{
    color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
   .image-button:hover{scale:1.3;transition:transform 0.3s ease;}
    
+.frame{width:100%;height:80vh;border:none;}
 
-#btn0{position:absolute;top:20%;left:10%;}
-#btn0 .image-text{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)rotate(4deg);
+#btn0{position:absolute;top:20%;left:3%;}
+#btn0 .image-text{position:absolute;top:65%;left:50%;transform:translate(-50%, -50%)rotate(5deg);
    color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
 #btn1{position:fixed;bottom:30px;right:47px;}
-#btn2{position:absolute;top:53%;left:42%;}
+#btn1 .image-text{position:absolute;top:58%;left:44%;transform:translate(-50%, -50%)rotate(-26deg);
+   color:#100058;font-weight:bold;font-size:2rem;text-align:center;}
+#btn2{position:absolute;top:55%;left:42%;transform:rotate(20deg);}
+#btn2 .image-text{position:absolute;top:54%;left:54%;transform:translate(-50%, -50%)rotate(-23deg);
+   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
 #btn3{position:absolute;top:20%;left:40%;}
+#btn3 .image-text{position:absolute;top:55%;left:50%;transform:translate(-50%, -50%)rotate(4deg);
+   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
 #btn4{position:absolute;top:40%;left:20%;}
+#btn4 .image-text{position:absolute;top:65%;left:50%;transform:translate(-50%, -50%)rotate(4deg);
+   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
 #btn5{position:absolute;top:55%;left:03%;}
+#btn5 .image-text{position:absolute;top:67%;left:50%;transform:translate(-50%, -50%)rotate(5deg);
+   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
 
  /* .image-button1{position:fixed;bottom:30px;right:47px;cursor:pointer;}
   .image-button1 img{display:block;max-width:250px;}
