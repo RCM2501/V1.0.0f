@@ -1,70 +1,173 @@
-body{
-      font-family:Arial;
-      background:#e9dbae;
-    }
-  nav{
-      background:#333;
-      color:#fff;
-      padding:1rem;
-      text-align:center;
-      width:max-content;
-      margin-top:1rem;           
-    }
-  nav a{color:#fff;margin:0 .5rem;}
-  section{padding:2rem;}
+body {
+   font-family: Arial;
+   background: #e9dbae;
+}
 
-  .image-button{display:inline-block;cursor:pointer;}
-  .image-button img{display:block;max-width:250px;}
-  .image-button .image-text{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)rotate(4deg);
-   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
-  .image-button:hover{scale:1.3;transition:transform 0.3s ease;}
-   
-.frame{width:100%;height:80vh;border:none;}
+nav {
+   background: #333;
+   padding: 1rem;
+   text-align: center;
+   width: max-content;
+   margin-top: 1rem;
+   margin:auto;
+   text-decoration: none;
+}
 
-#btn0{position:absolute;top:20%;left:3%;}
-#btn0 .image-text{position:absolute;top:65%;left:50%;transform:translate(-50%, -50%)rotate(5deg);
-   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
-#btn1{position:fixed;bottom:30px;right:47px;}
-#btn1 .image-text{position:absolute;top:58%;left:44%;transform:translate(-50%, -50%)rotate(-26deg);
-   color:#100058;font-weight:bold;font-size:2rem;text-align:center;}
-#btn2{position:absolute;top:55%;left:42%;transform:rotate(20deg);}
-#btn2 .image-text{position:absolute;top:54%;left:54%;transform:translate(-50%, -50%)rotate(-23deg);
-   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
-#btn3{position:absolute;top:20%;left:40%;}
-#btn3 .image-text{position:absolute;top:55%;left:50%;transform:translate(-50%, -50%)rotate(4deg);
-   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
-#btn4{position:absolute;top:40%;left:20%;}
-#btn4 .image-text{position:absolute;top:65%;left:50%;transform:translate(-50%, -50%)rotate(4deg);
-   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
-#btn5{position:absolute;top:55%;left:03%;}
-#btn5 .image-text{position:absolute;top:67%;left:50%;transform:translate(-50%, -50%)rotate(5deg);
-   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
+nav a {
+   color: #fff;
+   margin: 0 .5rem;
+   text-decoration: none;
+}
 
- /* .image-button1{position:fixed;bottom:30px;right:47px;cursor:pointer;}
-  .image-button1 img{display:block;max-width:250px;}
-  .image-button1 .image-text{position:absolute;top:58%;left:44%;transform:translate(-50%, -50%)rotate(-26deg);
-   color:#100058;font-weight:bold;font-size:2rem;text-align:center;}
-  .image-button1:hover{scale:1.3;transition:transform 0.3s ease;}
-  
-  .image-button2{position:absolute;display:inline-block;cursor:pointer;top:53%;left:42%;} 
-  .image-button2 img{display:block;max-width:250px;}
-  .image-button2 .image-text{position:absolute;top:54%;left:54%;transform:translate(-50%, -50%)rotate(-23deg);
-   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
-  .image-button2:hover{scale:1.3;transition:transform 0.3s ease;}
-   
-  .image-button3{position:absolute;display:inline-block;cursor:pointer;top:20%;left:40%;}
-  .image-button3 img{display:block;max-width:250px;}  
-  .image-button3 .image-text{position:absolute;top:55%;left:50%;transform:translate(-50%, -50%)rotate(4deg);
-   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
-  .image-button3:hover{scale:1.3;transition:transform 0.3s ease;}
-    
-  .image-button4{position:absolute;display:inline-block;cursor:pointer;top:40%;left:20%;}
-  .image-button4 img{display:block;max-width:250px;}    
-  .image-button4 .image-text{position:absolute;top:67%;left:50%;transform:translate(-50%, -50%)rotate(4deg);
-   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;}
-  .image-button4:hover{scale:1.3;transition:transform 0.3s ease;}
+nav a:hover {
+   color: #00ff80;
+}
 
-  .image-button5 img{display:block;max-width:250px;}
-  .image-button5 .image-text{position:absolute;top:65%;left:50%;transform:translate(-50%, -50%)rotate(4deg);
-   color:#00ff80;font-weight:bold;text-align:center;font-size:1.4rem;} 
-  .image-button5:hover{scale:1.3;transition:transform 0.3s ease;} */
+section {
+   padding: 2rem;
+}
+
+.image-button {
+   display: inline-block;
+   cursor: pointer;
+}
+
+.image-button img {
+   display: block;
+   max-width: 250px;
+}
+
+.image-button .image-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%)rotate(4deg);
+   color: #00ff80;
+   font-weight: bold;
+   text-align: center;
+   font-size: 1.4rem;
+}
+
+.image-button:hover {
+   scale: 1.3;
+   transition: transform 0.3s ease;
+}
+
+.frame {
+   width: 100%;
+   height: 80vh;
+   border: none;
+}
+
+#btn0 {
+   position: absolute;
+   top: 20%;
+   left: 3%;
+}
+
+#btn0 .image-text {
+   position: absolute;
+   top: 65%;
+   left: 50%;
+   transform: translate(-50%, -50%)rotate(5deg);
+   color: #00ff80;
+   font-weight: bold;
+   text-align: center;
+   font-size: 1.4rem;
+}
+
+#btn1 {
+   position: fixed;
+   bottom: 30px;
+   right: 47px;
+}
+
+#btn1 .image-text {
+   position: absolute;
+   top: 58%;
+   left: 44%;
+   transform: translate(-50%, -50%)rotate(-26deg);
+   color: #100058;
+   font-weight: bold;
+   font-size: 2rem;
+   text-align: center;
+}
+
+#btn2 {
+   position: absolute;
+   top: 55%;
+   left: 42%;
+   transform: rotate(20deg);
+}
+
+#btn2 .image-text {
+   position: absolute;
+   top: 54%;
+   left: 54%;
+   transform: translate(-50%, -50%)rotate(-23deg);
+   color: #00ff80;
+   font-weight: bold;
+   text-align: center;
+   font-size: 1.4rem;
+}
+
+#btn3 {
+   position: absolute;
+   top: 20%;
+   left: 40%;
+}
+
+#btn3 .image-text {
+   position: absolute;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%)rotate(4deg);
+   color: #00ff80;
+   font-weight: bold;
+   text-align: center;
+   font-size: 1.4rem;
+}
+
+#btn4 {
+   position: absolute;
+   top: 40%;
+   left: 20%;
+}
+
+#btn4 .image-text {
+   position: absolute;
+   top: 65%;
+   left: 50%;
+   transform: translate(-50%, -50%)rotate(4deg);
+   color: #00ff80;
+   font-weight: bold;
+   text-align: center;
+   font-size: 1.4rem;
+}
+
+#btn5 {
+   position: absolute;
+   top: 55%;
+   left: 03%;
+}
+
+#btn5 .image-text {
+   position: absolute;
+   top: 67%;
+   left: 50%;
+   transform: translate(-50%, -50%)rotate(5deg);
+   color: #00ff80;
+   font-weight: bold;
+   text-align: center;
+   font-size: 1.4rem;
+}
+
+.Hoofdtekst {
+   text-align: center;
+   color: #11b911;
+}
+
+.Inhoud {
+   text-align: start;
+   color: #11b911;
+}
