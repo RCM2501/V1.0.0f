@@ -171,3 +171,38 @@ section {
    text-align: start;
    color: #11b911;
 }
+
+.login-container {
+  background: white;
+  padding: 10%;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#message {
+  text-align: center;
+  margin-top: 15px;
+}
