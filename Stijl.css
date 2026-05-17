@@ -172,13 +172,13 @@ section {
    color: #11b911;
 }
 
-.login-container {
-  background: white;
+#loginForm {
   padding: 10%;
-  width: 100%;
+  width: 50%;
+  margin:auto;
 }
 
-input {
+#input {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
@@ -187,7 +187,7 @@ input {
   box-sizing: border-box;
 }
 
-button {
+#loginButton {
   width: 100%;
   padding: 12px;
   border: none;
@@ -198,11 +198,11 @@ button {
   font-size: 16px;
 }
 
-button:hover {
+#loginButton:hover {
   opacity: 0.9;
 }
 
 #message {
   text-align: center;
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
