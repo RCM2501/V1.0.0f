@@ -1,6 +1,30 @@
-body {
+.body2 {
    font-family: Arial;
-   background: #e9dbae;
+   background: none;
+}
+
+.body2::before {
+   content: "";
+   position: fixed;
+   inset: 0;
+
+   background: url("https://i.pinimg.com/originals/a6/40/65/a6406507039471cc6cc9fc178813233a.jpg");
+   background-size: cover;
+   background-position: center;
+
+   opacity: 1;
+   transition: opacity 0.4s ease, filter 0.4s ease;
+   z-index: -1;
+}
+
+.body2.fade-bg::before {
+   opacity: 0.5;
+   filter: blur(2px);
+}
+
+.bodyindex {
+   font-family: Arial;
+   background: #ffffb9;
 }
 
 nav {
@@ -32,7 +56,7 @@ section {
    cursor: pointer;
    transition: transform 0.3s ease;
    transform-origin: center;
-   width: clamp(100px, 40vw, 250px);
+   width: clamp(150px, 25vw, 250px);
 }
 
 .image-button img {
@@ -65,7 +89,7 @@ section {
 
 #btn0 {
    position: absolute;
-   top: 20%;
+   top: 25%;
    left: 3%;
 }
 
@@ -99,7 +123,7 @@ section {
 
 #btn2 {
    position: absolute;
-   top: 55%;
+   top: 60%;
    left: 42%;
    transform: rotate(20deg);
 }
@@ -120,7 +144,7 @@ section {
 
 #btn3 {
    position: absolute;
-   top: 20%;
+   top: 25%;
    left: 40%;
 }
 
@@ -137,7 +161,7 @@ section {
 
 #btn4 {
    position: absolute;
-   top: 40%;
+   top: 45%;
    left: 20%;
 }
 
@@ -154,7 +178,7 @@ section {
 
 #btn5 {
    position: absolute;
-   top: 55%;
+   top: 60%;
    left: 03%;
 }
 
