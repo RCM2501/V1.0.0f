@@ -1,25 +1,7 @@
 .body2 {
-   font-family: Arial;
-   background: none;
-}
-
-.body2::before {
-   content: "";
-   position: fixed;
-   inset: 0;
-
-   background: url("https://i.pinimg.com/originals/a6/40/65/a6406507039471cc6cc9fc178813233a.jpg");
-   background-size: cover;
-   background-position: center;
-
-   opacity: 1;
-   transition: opacity 0.4s ease, filter 0.4s ease;
-   z-index: -1;
-}
-
-.body2.fade-bg::before {
-   opacity: 0.5;
-   filter: blur(2px);
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://i.pinimg.com/originals/a6/40/65/a6406507039471cc6cc9fc178813233a.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .bodyindex {

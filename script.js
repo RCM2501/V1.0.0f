@@ -16,15 +16,3 @@ loginForm.addEventListener('submit', function(event) {
     message.textContent = 'Verkeerde logingegevens';
   }
 });
-
-const links = document.querySelectorAll("nav a");
-
-links.forEach(link => {
-   link.addEventListener("click", () => {
-      document.body.classList.add("fade-bg");
-
-      setTimeout(() => {
-         document.body.classList.remove("fade-bg");
-      }, 600);
-   });
-});
