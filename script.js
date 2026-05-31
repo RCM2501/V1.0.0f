@@ -75,4 +75,3 @@ function gaNaarHobbies() {
     setFrameSrc('Hobbies.html');
   }
 }
-
