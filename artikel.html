@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nieuwsartikel</title>
+  <link rel="stylesheet" href="Stijl.css">
+  <style>
+    body {
+      background: #f4f4f8;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #111;
+    }
+    .article-page {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.15);
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+    .article-page h1 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: #100058;
+    }
+    .article-page .article-image {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: 14px;
+      margin: 1.5rem 0;
+      display: block;
+    }
+    .article-page .datum {
+      margin: 0.5rem 0 1.5rem;
+      color: #666;
+      font-size: 0.95rem;
+    }
+    .article-page .content p {
+      line-height: 1.8;
+      margin: 0 0 1rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="article-page">
+    <h1 id="article-title">Nieuwsartikel</h1>
+    <img id="article-image" class="article-image" src="" alt="Nieuwsafbeelding">
+    <div class="datum" id="article-date">Datum</div>
+    <div class="content" id="article-content">
+      <p>Hier komt later de volledige tekst voor het artikel. Vervang deze inhoud wanneer je het echte artikel wilt toevoegen.</p>
+    </div>
+  </main>
+
+  <script src="articles-data.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id') || '1';
+    const data = (window.ARTICLES && window.ARTICLES[id]) ? window.ARTICLES[id] : null;
+    if (!data) {
+      // fallback: toon foutmelding
+      document.getElementById('article-title').textContent = 'Artikel niet gevonden';
+      document.getElementById('article-date').textContent = '';
+      document.getElementById('article-content').innerHTML = '<p>Het gevraagde artikel bestaat (nog) niet.</p>';
+    } else {
+    const articleImage = document.getElementById('article-image');
+    document.getElementById('article-title').textContent = data.title;
+    document.getElementById('article-date').textContent = data.date;
+    if (articleImage) {
+      articleImage.src = data.image || '2026-04-09 20.31.32.jpg';
+      articleImage.alt = data.title;
+    }
+    document.getElementById('article-content').innerHTML = data.body.map(text => `<p>${text}</p>`).join('');
+    }
+  </script>
+</body>
+</html>

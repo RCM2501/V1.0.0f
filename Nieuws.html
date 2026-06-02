@@ -12,24 +12,47 @@
   <section id="Nieuws">
     <div class="Hoofdtekst">
       <h1>Nieuws</h1>
-      <h3>Het laatste nieuws</h3>
+      <h3>Lees hieronder wat nieuws van mij</h3>
     </div>
     <div class="Inhoud">
-      <p>Hier is het laatste nieuws</p>
-    </div>
-    <div class="Inhoud" id="nieuws-container">
-      <p>Nieuws laden...</p>
-    </div>
-    <div class="Inhoud">
-      <button id="nieuws-switch-btn">Ander nieuws</button>
-    </div>
-    <div class="Hoofdtekst">
-      <h3>Nieuws van mij</h3>
-    </div>
-    <div class="Inhoud">
-      <p>Hier zal ik mijn eigen nieuws delen, zoals updates over mijn projecten, persoonlijke mijlpalen, of andere
+      <p>Hier zal ik mijn eigen nieuws delen, zoals updates over mijn projecten, persoonlijke mijlpalen of andere
         interessante gebeurtenissen in mijn leven.</p>
+    </div>
+    <div id="mncontainer">
+    </div>
+    <script src="articles-data.js"></script>
+    <script>
+      (function renderNews() {
+        const container = document.getElementById('mncontainer');
+        if (!container || !window.ARTICLES) return;
+        const ids = Object.keys(window.ARTICLES).sort();
+        ids.forEach((id) => {
+          const a = window.ARTICLES[id];
+          const article = document.createElement('article');
+          article.className = 'nieuws-item';
+
+          article.innerHTML = `
+            <div class="datum">${a.date}</div>
+            <div class="nieuws-text">
+              <div class="Hoofdtekst"><p>${a.title}</p></div>
+              <div class="Inhoud"><p>${a.summary || a.body[0] || ''}</p></div>
+              <button type="button" class="lees-meer" data-src="artikel.html?id=${a.id}">Lees meer</button>
+            </div>
+            <img src="${a.image}" alt="${a.title}">
+          `;
+
+          container.appendChild(article);
+        });
+      })();
+    </script>
   </section>
+
+  <div id="article-overlay" class="article-overlay">
+    <div class="overlay-panel">
+      <button type="button" class="overlay-close" aria-label="Sluit artikel">×</button>
+      <iframe id="article-frame" src="" title="Nieuwsartikel"></iframe>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

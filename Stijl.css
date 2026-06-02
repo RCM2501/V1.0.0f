@@ -19,7 +19,7 @@
    text-align: start;
    color: #100058;
    padding: 2rem;
-   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 150%;
 }
 
@@ -27,27 +27,40 @@ nav {
    background: #333;
    padding: 1rem;
    text-align: center;
-   width: max-content;
-   margin-top: 1rem;
+   width: 30%;
+   min-width: 500px;
    margin: auto;
    text-decoration: none;
 }
 
 nav a {
    color: #fff;
-   margin: 0 .5rem;
+   margin: 0.2rem;
    text-decoration: none;
+   position: relative;
+   bottom: 5px;
+}
+
+nav a img {
+   width: 25px;
+   height: 25px;
+   position: relative;
+   top: 10px;
+   margin-right: 2px;
 }
 
 nav a:hover {
    color: #00ff80;
 }
 
-section {
-   padding: 2rem;
+.button-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
 }
 
 .image-button {
+   position: relative;
    display: inline-block;
    cursor: pointer;
    transition: transform 0.3s ease;
@@ -83,12 +96,6 @@ section {
    margin: 0 auto;
 }
 
-#btn0 {
-   position: absolute;
-   top: 25%;
-   left: 3%;
-}
-
 #btn0 .image-text {
    position: absolute;
    top: 65%;
@@ -101,9 +108,9 @@ section {
 }
 
 #btn1 {
-   position: fixed;
-   bottom: 30px;
-   right: 47px;
+   position: absolute;
+   bottom: 2%;
+   right: 2%;
 }
 
 #btn1 .image-text {
@@ -118,10 +125,9 @@ section {
 }
 
 #btn2 {
-   position: absolute;
-   top: 60%;
-   left: 40%;
    transform: rotate(20deg);
+   margin-left: 15px;
+   margin-right: 15px;
 }
 
 #btn2:hover {
@@ -139,12 +145,6 @@ section {
    font-size: 1.4rem;
 }
 
-#btn3 {
-   position: absolute;
-   top: 25%;
-   left: 40%;
-}
-
 #btn3 .image-text {
    position: absolute;
    top: 55%;
@@ -156,12 +156,6 @@ section {
    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
 }
 
-#btn4 {
-   position: absolute;
-   top: 45%;
-   left: 20%;
-}
-
 #btn4 .image-text {
    position: absolute;
    top: 65%;
@@ -171,12 +165,6 @@ section {
    font-weight: bold;
    text-align: center;
    font-size: 1.4rem;
-}
-
-#btn5 {
-   position: absolute;
-   top: 60%;
-   left: 03%;
 }
 
 #btn5 .image-text {
@@ -202,6 +190,8 @@ section {
    color: #000000;
    font-size: 150%;
    font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-left: 2rem;
+   margin-right: 2rem;
 }
 
 .loginInput {
@@ -264,7 +254,7 @@ section {
    min-height: 455px;
 }
 
-#nieuws-container > .news-item {
+#nieuws-container>.news-item {
    background: white;
    flex: 1 1 calc(30% - 2%);
    max-width: calc(30% - 2%);
@@ -283,11 +273,11 @@ section {
    line-height: 1.4;
 }
 
-#nieuws-container > .news-item:nth-child(n+4) {
+#nieuws-container>.news-item:nth-child(n+4) {
    display: none;
 }
 
-#nieuws-container > .news-item img {
+#nieuws-container>.news-item img {
    width: 100%;
    max-height: 180px;
    object-fit: cover;
@@ -295,25 +285,25 @@ section {
    margin-bottom: 0.9rem;
 }
 
-#nieuws-container > .news-item h2 {
+#nieuws-container>.news-item h2 {
    font-size: 1.1rem;
    margin: 0 0 0.8rem;
 }
 
-#nieuws-container > .news-item p {
+#nieuws-container>.news-item p {
    font-size: 0.95rem;
    margin: 0 0 1rem;
    flex: 1 0 auto;
 }
 
-#nieuws-container > .news-item a {
+#nieuws-container>.news-item a {
    color: #0050ff;
    font-weight: bold;
    text-decoration: none;
    font-size: 0.95rem;
 }
 
-#nieuws-container > .news-item a:hover {
+#nieuws-container>.news-item a:hover {
    text-decoration: underline;
 }
 
@@ -328,3 +318,153 @@ section {
    padding: 10px;
    font-size: 16px;
 }
+
+.inhoud-row {
+   display: flex;
+   gap: 1.5rem;
+   align-items: flex-start;
+   justify-content: flex-start;
+   padding: 0 2rem;
+}
+
+.imgihkrico {
+   flex: 0 0 auto;
+}
+
+.ihkrico {
+   width: 400px;
+   height: auto;
+   border-radius: 12px;
+   position: static;
+}
+
+#mncontainer {
+   background: transparent;
+   display: grid;
+   grid-template-columns: repeat(2, minmax(300px, 1fr));
+   gap: 1rem;
+   padding: 1rem 2rem 2rem;
+   max-width: 1200px;
+   margin: 1rem auto;
+}
+
+.nieuws-item {
+   position: relative;
+   background: white;
+   border-radius: 12px;
+   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+   padding: 1rem;
+   box-sizing: border-box;
+   display: grid;
+   grid-template-columns: 1fr 300px;
+   gap: 1rem;
+   align-items: center;
+   min-height: 320px;
+}
+
+.nieuws-item .datum {
+   position: absolute;
+   top: 1rem;
+   left: 1rem;
+   background: #100058;
+   color: white;
+   padding: 0.4rem 0.7rem;
+   border-radius: 10px;
+   font-size: 0.85rem;
+}
+
+.nieuws-item img {
+   width: 300px;
+   height: 300px;
+   object-fit: cover;
+   border-radius: 12px;
+}
+
+.nieuws-item .Hoofdtekst {
+   margin: 0 0 0.5rem;
+   text-align: left;
+   font-size: 1.2rem;
+}
+
+.nieuws-item .Inhoud {
+   margin: 0;
+}
+
+.nieuws-item .Inhoud p {
+   margin: 0;
+}
+
+.nieuws-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-height: 300px;
+}
+
+/* Zorg dat de datum-badge de kop niet overlapt */
+.nieuws-text {
+   padding-top: 1.6rem;
+}
+
+.lees-meer {
+   margin-top: 1rem;
+   padding: 0.75rem 1rem;
+   border: none;
+   background: #100058;
+   color: white;
+   border-radius: 10px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background 0.2s ease;
+}
+
+.lees-meer:hover {
+   background: #2a0f8e;
+}
+
+.article-overlay {
+   position: fixed;
+   inset: 0;
+   display: none;
+   align-items: center;
+   justify-content: center;
+   background: rgba(0, 0, 0, 0.6);
+   z-index: 9999;
+   padding: 1rem;
+}
+
+.article-overlay.active {
+   display: flex;
+}
+
+.overlay-panel {
+   width: min(100%, 1000px);
+   max-height: 90vh;
+   background: white;
+   border-radius: 16px;
+   overflow: hidden;
+   position: relative;
+   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-close {
+   position: absolute;
+   top: 0.75rem;
+   right: 0.75rem;
+   width: 2.5rem;
+   height: 2.5rem;
+   border: none;
+   background: #100058;
+   color: white;
+   border-radius: 50%;
+   font-size: 1.4rem;
+   line-height: 1;
+   cursor: pointer;
+}
+
+#article-frame {
+   width: 100%;
+   height: 80vh;
+   border: none;
+}
+
