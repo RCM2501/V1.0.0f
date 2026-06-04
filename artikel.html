@@ -49,10 +49,9 @@
 <body>
   <main class="article-page">
     <h1 id="article-title">Nieuwsartikel</h1>
-    <img id="article-image" class="article-image" src="" alt="Nieuwsafbeelding">
+    <img id="article-image" class="article-image" alt="Nieuwsafbeelding">
     <div class="datum" id="article-date">Datum</div>
     <div class="content" id="article-content">
-      <p>Hier komt later de volledige tekst voor het artikel. Vervang deze inhoud wanneer je het echte artikel wilt toevoegen.</p>
     </div>
   </main>
 
@@ -70,7 +69,7 @@
     document.getElementById('article-title').textContent = data.title;
     document.getElementById('article-date').textContent = data.date;
     if (articleImage) {
-      articleImage.src = data.image || '2026-04-09 20.31.32.jpg';
+      articleImage.src = data.image;
       articleImage.alt = data.title;
     }
     document.getElementById('article-content').innerHTML = data.body.map(text => `<p>${text}</p>`).join('');
