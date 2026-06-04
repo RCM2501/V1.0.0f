@@ -12,6 +12,23 @@ function setFrameSrc(src) {
   }
 }
 
+const storedEmail = 'ricomourik@mail.com';
+const passwordSalt = 's8L4t2026!@#';
+// Wachtwoord: HobbieRico#2026
+const storedPasswordHash = 'ab2f2ef0189d6a304d2c3fef185ec73d0a779ca2f37f5826f2c8c644f226384d';
+
+async function hashText(text) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(text);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+
+function hashSaltedPassword(password) {
+  return hashText(passwordSalt + password);
+}
+
 function openArticleFrame(src) {
   const overlay = document.getElementById('article-overlay');
   const articleFrame = document.getElementById('article-frame');
@@ -50,13 +67,14 @@ window.addEventListener('DOMContentLoaded', () => {
   const loginForm = document.getElementById('loginForm');
 
   if (loginForm) {
-    loginForm.addEventListener('submit', function (event) {
+    loginForm.addEventListener('submit', async function (event) {
       event.preventDefault();
 
-      const email = document.getElementById('email').value;
+      const email = document.getElementById('email').value.trim().toLowerCase();
       const password = document.getElementById('password').value;
 
-      if (email === 'test@mail.com' && password === '123456') {
+      const passwordHash = await hashSaltedPassword(password);
+      if (email === storedEmail.toLowerCase() && passwordHash === storedPasswordHash) {
         localStorage.setItem('hobbiesLoggedIn', 'true');
         showLoginError('');
         window.location.href = 'Hobbiesin.html';

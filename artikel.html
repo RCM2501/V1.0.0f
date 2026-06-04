@@ -62,7 +62,6 @@
     const id = params.get('id') || '1';
     const data = (window.ARTICLES && window.ARTICLES[id]) ? window.ARTICLES[id] : null;
     if (!data) {
-      // fallback: toon foutmelding
       document.getElementById('article-title').textContent = 'Artikel niet gevonden';
       document.getElementById('article-date').textContent = '';
       document.getElementById('article-content').innerHTML = '<p>Het gevraagde artikel bestaat (nog) niet.</p>';

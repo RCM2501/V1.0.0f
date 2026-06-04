@@ -16,7 +16,7 @@ window.ARTICLES = {
     title: 'Grote Avond 2026',
     date: '9 en 10 april 2026',
     image: '2026-04-09 20.31.32.jpg',
-    summary: 'Voor de derde keer in het Zuidplein!',
+    summary: 'Voor de derde keer in het Zuidplein theater!',
     body: [
       'Ik heb op 9 en 10 april 2026 deelgenomen aan de Grote Avond in het Zuidplein. Dit was mijn derde keer dat ik in het Zuidplein theater stond, maar de eerste keer dat ik echt meedeed aan het stuk. De Grote Avond is een geweldige avond van de school in het theater, met een voorprogramma en het veelbelovende toneelstuk.',
       'Ik vond het dit jaar weer heel leuk om in het theater te staan en heb er heel veel plezier aan beleefd. Het was een geweldige ervaring om samen met anderen van de school op het podium te staan en deel uit te maken van dé Grote Avond. Ik kijk ernaar uit om volgend jaar weer mee te doen en hopelijk weer te kunnen bijdragen aan de Grote Avond!'
