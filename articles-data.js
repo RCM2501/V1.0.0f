@@ -2,7 +2,7 @@ window.ARTICLES = {
   '1': {
     id: '1',
     title: 'Wiskunde Olympiade Finale!',
-    date: '13 maart 2026 (geupdated)',
+    date: '13 maart 2026 (geüpdatet)',
     image: 'image0.jpeg',
     summary: 'Ik heb meegedaan aan de eerste en tweede ronde en deel mijn resultaten.',
     body: [
@@ -50,7 +50,7 @@ window.ARTICLES = {
     image: 'zorginstelling-sonneburgh.jpg',
     summary: 'Mijn stagedag bij Sonneburgh, een succes!',
     body: [
-      'Ik heb donderdag een hele goede stagedag gehad bij zorginstelling Sonneburgh. Ik heb stagegelopen bij de ICT-beheerder en gekeken hoe een gemiddelde werkdag er voor haar uitziet. Daarnaas heb ik natuurlijk gekeken of het iets voor mij is, en ja, ik zie mij dit werk wel doen. Zeker als het bijvoorbeeld in de zorgsector is, lijkt het me heel leuk om mensen te kunnen helpen en iets bij te dragen aan de zorg.',
+      'Ik heb donderdag een hele goede stagedag gehad bij zorginstelling Sonneburgh. Ik heb stagegelopen bij de ICT-beheerder en gekeken hoe een gemiddelde werkdag er voor haar uitziet. Daarnaast heb ik natuurlijk gekeken of het iets voor mij is, en ja, ik zie mij dit werk wel doen. Zeker als het bijvoorbeeld in de zorgsector is, lijkt het me heel leuk om mensen te kunnen helpen en iets bij te dragen aan de zorg.',
     ]
   },
   '6': {
