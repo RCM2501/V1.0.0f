@@ -29,7 +29,7 @@ window.ARTICLES = {
     image: 'HTML_Blog-scaled.jpeg',
     summary: 'Begonnen met de bouw van deze website!',
     body: [
-      'Vandaag ben ik begonnen met het bouwen van mijn eerste echte website. Ik heb al eerder wat kleine projecten gedaan, maar dit is de eerste keer dat ik een volledige website maak, deze eerste keer komt door school. Ik moet het doen voor een schoolopdracht en ik vind het best leuk om te maken. Ik leer veel nieuwe dingen maar kan ook zeker al wat dingen zelf.',
+      'Vandaag ben ik begonnen met het bouwen van mijn eerste echte website. Ik heb al eerder wat kleine projecten gedaan, maar dit is de eerste keer dat ik een volledige website maak, deze eerste keer voor school. Ik moet het doen voor een schoolopdracht en ik vind het best leuk om te maken. Ik leer veel nieuwe dingen maar kan ook zeker al wat dingen zelf.',
       'Het is een uitstekende manier om mijn vaardigheden in webontwikkeling te verbeteren en te leren hoe ik een professionele website kan bouwen. Ik hoop dat het goed genoeg uitpakt voor school en dat u al een tijdje hebt genoten van rondkijken op mijn website!'
     ]
   },
