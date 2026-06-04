@@ -7,7 +7,7 @@ window.ARTICLES = {
     summary: 'Ik heb meegedaan aan de eerste en tweede ronde en deel mijn resultaten.',
     body: [
       'Ik heb meegedaan aan de eerste en tweede ronde van de Wiskunde Olympiade. In de eerste ronde (19-30 januari 2026) behaalde ik een score van 27 punten, wat me kwalificeerde voor de tweede ronde. In de tweede ronde (13 maart 2026) behaalde ik een score van 21 punten, wat me plaatste in de top 48 van de deelnemers in klas 4 en daarmee mag ik door naar de finale!',
-      'Ik ben erg blij met mijn prestaties en kijk ernaar uit om aan de finale deel te nemen, die is op 11 september 2026. De Wiskunde Olympiade is een geweldige ervaring die me helpt geholpen mijn wiskundige vaardigheden te verbeteren.',
+      'Ik ben erg blij met mijn prestaties en kijk ernaar uit om aan de finale deel te nemen, die is op 11 september 2026. De Wiskunde Olympiade is een hele leuke ervaring die me helpt mijn wiskundige vaardigheden te verbeteren.',
       'Ik krijg om me goed voor te bereiden op de finale finaletrainingen. Ik zou aan 4 middagen kunnen deelnemen, maar ik kan maar bij 3 aanwezig zijn, in verband met mijn stage op 7 mei. Ik hoop dat ik toch een goede voorbereiding kan hebben ondanks dat ik niet bij alle trainingen aanwezig kan zijn. Maar hoe de finale uitpakt, zien we pas na de zomer!'
     ]
   },
