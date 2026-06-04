@@ -331,7 +331,13 @@ nav a:hover {
 }
 
 #vrijetijd {
-   margin-top: 5rem;
+   margin-top: 10rem;
+}
+
+#vosfilm {
+   height: 450px;
+   object-fit: cover;
+   object-position: bottom;
 }
 
 #mncontainer {
