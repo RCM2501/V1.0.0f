@@ -40,7 +40,7 @@ window.ARTICLES = {
     image: 'image1.jpg',
     summary: "Mijn zoveelste bezoek aan Blijdorp, met nog steeds nieuwe dingen!",
     body: [
-      'Zoals misschien algemeen bekend, ga ik wel vaker naar blijdorp met een paar mensen uit mijn familie. Maar eigenlijk altijd blijft onze vriend de otter binnen en niet zichtbaar. Ik heb hem nog niet eerder zelf gezien, tot vandaag! Ik heb niet een hele scherpe foto, maar hij staat er wel op!',
+      'Zoals misschien algemeen bekend, ga ik wel vaker naar Blijdorp met een paar mensen uit mijn familie. Maar eigenlijk altijd blijft onze vriend de otter binnen en niet zichtbaar. Ik heb hem nog niet eerder zelf gezien, tot vandaag! Ik heb niet een hele scherpe foto, maar hij staat er wel op!',
     ]
   },
   '5': {
@@ -60,7 +60,7 @@ window.ARTICLES = {
     image: 'dbe482b2-1291-465c-96df-1ef5f53581a4.jpg',
     summary: 'Een weekend met de hele familie in Achterveld!',
     body: [
-      'Ik ben dit weekend naar Achterveld geweest met mijn hele familie. We hebben daar een huis gehuurd en zijn met z’n allen een weekend lang daar geweest. Het was heel leuk om iedereen weer te zien en bij te kletsen,we hebben ook veel leuke dingen gedaan, zoals wandelen, spelletjes spelen en lekker eten.',
+      'Ik ben dit weekend naar Achterveld geweest met mijn hele familie. We hebben daar een huis gehuurd en zijn met z’n allen een weekend lang daar geweest. Het was heel leuk om iedereen weer te zien en bij te kletsen, we hebben ook veel leuke dingen gedaan, zoals wandelen, spelletjes spelen en lekker eten.',
       'Het huisje was alleen niet heel schoon, maar we hebben het beste ervan gemaakt, maar we zoeken voor volgend jaar weer wat anders!',
     ]
   }
