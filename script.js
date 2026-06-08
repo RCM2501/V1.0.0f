@@ -1,4 +1,8 @@
-﻿function getFrameElement() {
+﻿if (window === window.parent && !window.location.pathname.endsWith('/index.html')) {
+  window.location.replace('index.html');
+}
+
+function getFrameElement() {
   if (window.parent && window.parent !== window) {
     return window.parent.document.getElementById('mainframe');
   }
