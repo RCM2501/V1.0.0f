@@ -17,10 +17,10 @@ function setFrameSrc(src) {
 }
 
 const storedEmail = 'ricomourik@mail.com';
-const PEPPER = 'SuperSecretPepper123';
+const STORED_PEPPER = 'haLL0beve!ligin&g';
 const STORED_SALT = 'abcd1234wxyz5678';
 // Wachtwoord: HobbieRico#2026
-const STORED_HASH = 'eac41056b9d3437e59971cf27d272d05d9acf004889ca7defc99c66d670fd9b9';
+const STORED_HASH = 'c3a07336cc7051e614794dae05d635fc2b1da8b79d471725dbe2c4af1a77924e';
 
 async function generateHash(input) {
   const encoder = new TextEncoder();
@@ -31,7 +31,7 @@ async function generateHash(input) {
 }
 
 function hashSaltedPassword(password) {
-  return generateHash(password + STORED_SALT + PEPPER);
+  return generateHash(password + STORED_SALT + STORED_PEPPER);
 }
 
 function openArticleFrame(src) {
