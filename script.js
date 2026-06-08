@@ -17,20 +17,21 @@ function setFrameSrc(src) {
 }
 
 const storedEmail = 'ricomourik@mail.com';
-const passwordSalt = 's8L4t2026!@#';
+const PEPPER = 'SuperSecretPepper123';
+const STORED_SALT = 'abcd1234wxyz5678';
 // Wachtwoord: HobbieRico#2026
-const storedPasswordHash = 'ab2f2ef0189d6a304d2c3fef185ec73d0a779ca2f37f5826f2c8c644f226384d';
+const STORED_HASH = 'eac41056b9d3437e59971cf27d272d05d9acf004889ca7defc99c66d670fd9b9';
 
-async function hashText(text) {
+async function generateHash(input) {
   const encoder = new TextEncoder();
-  const data = encoder.encode(text);
+  const data = encoder.encode(input);
   const hashBuffer = await crypto.subtle.digest('SHA-256', data);
   const hashArray = Array.from(new Uint8Array(hashBuffer));
   return hashArray.map((b) => b.toString(16).padStart(2, '0')).join('');
 }
 
 function hashSaltedPassword(password) {
-  return hashText(passwordSalt + password);
+  return generateHash(password + STORED_SALT + PEPPER);
 }
 
 function openArticleFrame(src) {
@@ -78,7 +79,7 @@ window.addEventListener('DOMContentLoaded', () => {
       const password = document.getElementById('password').value;
 
       const passwordHash = await hashSaltedPassword(password);
-      if (email === storedEmail.toLowerCase() && passwordHash === storedPasswordHash) {
+      if (email === storedEmail.toLowerCase() && passwordHash === STORED_HASH) {
         localStorage.setItem('hobbiesLoggedIn', 'true');
         showLoginError('');
         window.location.href = 'Hobbiesin.html';
